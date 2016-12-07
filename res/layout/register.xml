@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    android:background="#fffff0" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="50dp"
+        android:text="用户名"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/RegUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="请输入用户名"
+        android:inputType="textPersonName" 
+        android:maxLength="10"/>
+
+    <EditText
+        android:id="@+id/RegPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RegUserName"
+        android:layout_alignRight="@+id/RegUserName"
+        android:layout_below="@+id/RegUserName"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+    
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@id/RegPassWord"
+        android:text="密   码"
+        android:textSize="20sp" />
+    
+
+    <Button
+        android:id="@+id/registerOK"
+        style="@style/button_style"
+        android:background="@drawable/bg_button"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@id/RegPassWord"
+        android:layout_below="@+id/RegPassWord"
+        android:layout_marginTop="50dp"
+        android:text="确认并注册"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffff0"
+    android:orientation="vertical" >
+
+    
+
+    <TextView
+        android:id="@+id/Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="50dp"
+        android:text="账户"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/LogUserName"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Account"
+        android:layout_toRightOf="@id/Account"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="请输入用户名"
+        android:inputType="textPersonName"
+        android:maxLength="10" >
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/LogPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/LogUserName"
+        android:layout_alignRight="@id/LogUserName"
+        android:layout_below="@id/LogUserName"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+         />
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Account"
+        android:layout_alignLeft="@+id/Account"
+        android:layout_toLeftOf="@id/LogPassWord"
+        android:layout_alignTop="@id/LogPassWord"
+        android:text="密码"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/LoginBtn"
+        style="@style/button_style"
+        android:background="@drawable/bg_button"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/Password"
+        android:layout_alignRight="@+id/RegisterBtn"
+        android:layout_below="@+id/Password"
+        android:layout_marginTop="50dp"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/RegisterBtn"
+        style="@style/button_touming_style"
+        android:background="@drawable/bg_button_touming"        
+        android:layout_alignRight="@+id/LogPassWord"
+        android:layout_below="@+id/LoginBtn"
+        android:layout_marginTop="10dp"
+        android:text="注册" 
+        android:gravity="right"/>
+
+</RelativeLayout>

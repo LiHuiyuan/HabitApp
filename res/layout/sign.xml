@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fffff0">
+
+    <TextView
+        android:id="@+id/SignDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SignBtn"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="81dp"
+        android:text="已签到天数"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/SignBtn"
+        style="@style/button_style"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/sign" />
+
+    <Button
+        android:id="@+id/TimerBtn"
+        style="@style/button_style"
+        android:background="@drawable/bg_button_timer"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"  
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="启动计时器" />
+
+</RelativeLayout>

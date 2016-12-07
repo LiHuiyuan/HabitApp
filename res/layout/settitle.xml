@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 从主界面跳转至习惯设置界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" 
+        android:text="习惯设置"
+        android:textColor="#fffff0"
+        android:textSize="25sp"
+     />
+    
+    <Button
+        android:id="@+id/MainSetSaveBtn"
+        style="@style/button_title_style"
+        android:background="@drawable/bg_button_touming_focus"
+        android:layout_alignParentRight="true"
+        android:text="完成"
+        />
+    <Button
+        android:id="@+id/CancelSetBtn"
+        style="@style/button_title_style"
+        android:background="@drawable/bg_button_touming_focus"
+        android:layout_alignParentLeft="true"
+        android:text="取消"
+        />
+
+</RelativeLayout>

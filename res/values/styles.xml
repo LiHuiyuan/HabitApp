@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+       
+    </style>
+
+    
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
+    
+    <style name="CustomWindowTitleBackground" type="text/css">
+        <item name="android:background">#66cdaa</item>      
+    </style>
+    
+    <style name="title_style" parent="android:Theme" type="text/css">
+        <item name="android:windowTitleSize">50dip</item> 
+        <item name="android:textColor">#a9a9a9</item>
+    	<item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    
+    </style>
+   
+
+	<style name="button_style" >
+		<item name="android:layout_width">100dp</item>
+		<item name="android:layout_height">30dp</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:gravity">center</item>
+	</style>
+	<style name="button_touming_style" >
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">30dp</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">#a9a9a9</item>
+		<item name="android:gravity">center</item>
+	</style>
+	<style name="button_title_style" >
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">#fffff0</item>
+		<item name="android:gravity">center</item>
+	</style>
+	<style name="toggle_style" parent="@android:style/Widget.CompoundButton">  
+	     <item name="android:button">@drawable/toggle</item>  
+	</style> 
+ 
+</resources>
+
+
+

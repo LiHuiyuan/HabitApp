@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffff0"
+    android:orientation="vertical" >
+
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="提醒"
+        android:textSize="20sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        style="@style/toggle_style"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RemindTimeBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textView1"
+        android:background="#fffff0"
+        android:textOff=""
+        android:textOn="" />
+
+    <Button
+        android:id="@+id/RemindDateBtn"
+        style="@style/button_touming_style"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/RemindTimeBtn"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/ShowRemindDate"
+        android:background="@drawable/bg_button_touming"
+        android:text="选择日期" />
+
+    <EditText
+        android:id="@+id/ShowRemindDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ShowRemindTime"
+        android:layout_alignRight="@+id/ShowRemindTime"
+        android:layout_alignTop="@+id/RemindDateBtn"
+        android:editable="false"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/RemindTimeBtn"
+        style="@style/button_touming_style"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ShowRemindTime"
+        android:layout_toRightOf="@+id/ShowRemindTime"
+        android:background="@drawable/bg_button_touming"
+        android:text="选择时间" />
+
+    <EditText
+        android:id="@+id/ShowRemindTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/toggleButton"
+        android:editable="false"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

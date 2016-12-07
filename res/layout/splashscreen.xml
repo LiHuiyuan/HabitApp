@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffff0"
+    android:gravity="center|center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/wordpress_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/habit" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="习惯养成" />
+
+    <TextView
+        android:id="@+id/versionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="bottom"
+        android:text="遇见更好的自己"
+        android:textColor="#696969"
+        android:textSize="20sp" >
+    </TextView>
+
+</LinearLayout>

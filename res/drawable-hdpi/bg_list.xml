@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffffff"/><!-- 设置列表背景颜色为白色 -->
+    
+     <stroke android:width="2dp" android:color="#e5e5e5"/><!-- 设置列表边框宽度和颜色 -->
+    
+    <!-- 设置列表圆角 -->
+    <corners 
+        android:bottomLeftRadius="10dip"        
+        android:bottomRightRadius="10dip" 
+        android:topLeftRadius="10dip"
+        android:topRightRadius="10dip"/> 
+    
+</shape>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 习惯添加界面的标题栏 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/AddBackBtn"
+        style="@style/button_title_style"
+        android:background="@drawable/bg_button_touming_focus"
+        android:layout_alignParentLeft="true"
+        android:text="返回"
+       />
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" 
+        android:text="添加习惯"
+        android:textColor="#fffff0"
+        android:textSize="25sp"
+     />
+    <Button
+        android:id="@+id/AddSaveBtn"
+        style="@style/button_title_style"
+        android:background="@drawable/bg_button_touming_focus"
+        android:layout_alignParentRight="true"
+        android:text="完成"
+        />
+    
+
+</RelativeLayout>
